@@ -2,7 +2,36 @@
 @{
     ViewData["Title"] = "Positions list";
 }
-<h1>
-    @Model.StationName
-</h1>
 
+<div class="container">
+    <h1>
+        @Model.StationName
+    </h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                @foreach (var sensor in Model.Positions)
+                {
+                    <th scope="col">
+                        @sensor.Parameters.ParamName 
+                    </th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                @foreach(var measureValue in Model.PositionValuse)
+                {
+                    <td>
+                        @measureValue
+                    </td>
+                }
+            </tr>
+        </tbody>
+    </table>
+---------------------------------------------------------------------------------------------
+    <h3 class="text-primary">Wskaźnik jakości powietrza: </h3>
+    <p>@Model.AirIndex</p>
+
+</div>

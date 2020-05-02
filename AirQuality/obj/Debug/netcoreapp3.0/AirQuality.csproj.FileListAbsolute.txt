@@ -38,3 +38,4 @@ C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Microsoft.AspNetC
 C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
 C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\Razor\Views\Stations\Positions.cshtml.g.cs
+C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\Razor\Views\About\Index.cshtml.g.cs

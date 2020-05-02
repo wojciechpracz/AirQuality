@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
@@ -50,6 +51,48 @@ namespace AirQuality.Services
             }
 
             return positions;
+        }
+
+        public async Task<string> GetMeasuredValue(int sensorId)
+        {
+            var measuredValues = new ValuesFromSensor();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://api.gios.gov.pl/pjp-api/rest/");
+                string req = String.Format("data/getData/{0}", sensorId);
+
+                var response = await client.GetAsync(req);
+                
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    measuredValues = JsonConvert.DeserializeObject<ValuesFromSensor>(result);
+                }
+            }
+
+            return measuredValues.Values.FirstOrDefault(x => x.Value != "null").Value;
+        }
+
+        public async Task<AirIndex> GetAirQualityIndex(int stationId)
+        {
+            AirIndex index = new AirIndex();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://api.gios.gov.pl/pjp-api/rest/");
+                string req = String.Format("aqindex/getIndex/{0}", stationId);
+
+                var response = await client.GetAsync(req);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+
+                    index = JsonConvert.DeserializeObject<AirIndex>(result, new IndexConverter());
+                }
+
+            }
+
+            return index;
         }
 
     }

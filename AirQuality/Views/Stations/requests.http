@@ -1,0 +1,9 @@
+GET http://api.gios.gov.pl/pjp-api/rest/station/findAll
+
+###############################################################
+
+GET http://api.gios.gov.pl/pjp-api/rest/station/sensors/117
+
+###############################################################
+
+GET http://api.gios.gov.pl/pjp-api/rest/data/getData/672

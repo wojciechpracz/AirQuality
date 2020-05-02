@@ -7,5 +7,7 @@ namespace AirQuality.ViewModels
     {
         public string StationName { get; set; }
         public List<MeasurementPosition> Positions { get; set; }
+        public List<string> PositionValuse { get; set; }
+        public string AirIndex { get; set; }
     }
 }
