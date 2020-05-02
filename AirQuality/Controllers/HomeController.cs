@@ -7,6 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using AirQuality.Models;
 using AirQuality.Services;
+using AirQuality.ViewModels;
 
 namespace AirQuality.Controllers
 {

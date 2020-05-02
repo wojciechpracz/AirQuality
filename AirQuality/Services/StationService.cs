@@ -29,5 +29,29 @@ namespace AirQuality.Services
             }
             return stations;
         }
+
+        public async Task<IEnumerable<MeasurementPosition>> GetPositions(int stationId)
+        {
+            var positions = new List<MeasurementPosition>();
+            using (var client = new HttpClient())
+            {
+                client.BaseAddress = new Uri("http://api.gios.gov.pl/pjp-api/rest/");
+
+                string req = String.Format("station/sensors/{0}", stationId);
+
+                var response = await client.GetAsync(req);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    var result = await response.Content.ReadAsStringAsync();
+                    positions = JsonConvert.DeserializeObject<List<MeasurementPosition>>(result);
+                }
+
+            }
+
+            return positions;
+        }
+
     }
+
 }

@@ -7,6 +7,7 @@ namespace AirQuality.Services
     public interface IStationService
     {
         Task<IEnumerable<Station>> GetStations();
+        Task<IEnumerable<MeasurementPosition>> GetPositions(int stationId);
 
     }
 }

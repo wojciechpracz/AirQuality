@@ -14364,6 +14364,11 @@
   "RootNamespace": "AirQuality",
   "Documents": [
     {
+      "FilePath": "c:\\Users\\Wojtek\\Projekt PWI\\AirQuality\\Views\\Stations\\Positions.cshtml",
+      "TargetPath": "Views\\Stations\\Positions.cshtml",
+      "FileKind": "mvc"
+    },
+    {
       "FilePath": "c:\\Users\\Wojtek\\Projekt PWI\\AirQuality\\Views\\_ViewImports.cshtml",
       "TargetPath": "Views\\_ViewImports.cshtml",
       "FileKind": "mvc"
