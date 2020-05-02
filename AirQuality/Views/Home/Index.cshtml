@@ -1,8 +1,46 @@
-﻿@{
+﻿@model List<AirQuality.Models.Station>;
+
+@{
     ViewData["Title"] = "Home Page";
 }
+<div>
+    <div class="row mb-5">
+        <div class="col">
+            <h3 class="text-center mb-3">
+                Sprawdź jakość powietrza
+            </h3>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+            <h5>
+                Projekt ten został wykonany w ramach przedmiotu Programowanie w Internecie. 
+                Wykorzystana została technologia ASP.NET Core MVC. 
+                Kod źródłowy możesz pobrać klikając w przycisk poniżej
+            </h5>
+
+            <button>Kod źródłowy</button>
+        </div>
+    </div>
+    <div class="row">
+        <table class="table">
+            <thead>
+                <tr>
+                <th scope="col">Nazwa</th>
+                <th scope="col">Gmina</th>
+                <th scope="col">Powiat</th>
+                <th scope="col">Województwo</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var station in Model)
+                {
+
+                    <tr>
+                        <td>@station.StationName</td>
+                        <td>@station.Commune</td>
+                        <td>@station.District</td>
+                        <td>@station.Province</td>
+                    </tr>   
+                }
+            </tbody>
+        </table>
+    </div>
 </div>

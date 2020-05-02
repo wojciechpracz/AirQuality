@@ -33,3 +33,7 @@ C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\AirQuality.Views.
 C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\AirQuality.dll
 C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\AirQuality.pdb
 C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\AirQuality.csproj.CopyComplete
+C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Newtonsoft.Json.dll
+C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
