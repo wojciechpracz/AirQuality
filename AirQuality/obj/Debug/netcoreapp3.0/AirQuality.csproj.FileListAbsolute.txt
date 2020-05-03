@@ -39,3 +39,5 @@ C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Newtonsoft.Json.d
 C:\Users\Wojtek\Projekt PWI\AirQuality\bin\Debug\netcoreapp3.0\Newtonsoft.Json.Bson.dll
 C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\Razor\Views\Stations\Positions.cshtml.g.cs
 C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\Razor\Views\About\Index.cshtml.g.cs
+C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\AirQuality.csproj.CoreCompileInputs.cache
+C:\Users\Wojtek\Projekt PWI\AirQuality\obj\Debug\netcoreapp3.0\AirQuality.genruntimeconfig.cache

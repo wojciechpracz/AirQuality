@@ -22,13 +22,16 @@
     </div>
 </div>
 <div class="stations ml-0 mr-0">
+
     <h5 class="text-center mb-3 mt-3">
         Wybierz z poniższej listy stację, dla której chcesz sprawdzić jakość powietrza
     </h5>
 
-        <div class="row ml-5 mr-5">
+        <div class="row">
+            <div class="col">
+                <div class="table-responsive">
             <table class="table">
-                <thead>
+                <thead>`
                     <tr>
                         <th scope="col">Nazwa</th>
                         <th scope="col">Gmina</th>
@@ -51,11 +54,12 @@
                                 <td>@station.Commune</td>
                                 <td>@station.District</td>
                                 <td>@station.Province</td>
-                                <input type="hidden" asp-for="@station.StationName"/>
                             </tr>
                     }
                 </tbody>
             </table>
+            </div>
+            </div>
         </div>
 </div>
 
